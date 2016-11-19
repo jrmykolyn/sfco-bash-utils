@@ -4,7 +4,7 @@
 
 ### Attribution
 ---
-- *Version:* `0.0.6`
+- *Version:* `0.0.7`
 - *Author:* **Jesse R Mykolyn** `<jrmykolyn@gmail.com>`
 - *Link:* **N/A**
 
@@ -33,11 +33,11 @@
 		- When invoked, this function prints out a list of the any scripts which have been initalized by SF Co. Bash Utils.
 	- *Examples*
 		- `sfco-utils`
-- **get-images** [-whn] [--width --height --num]
+- **get-images** [-whnp] [--width --height --num --prefix]
 	- *Description*
 		- This function fetches images from the [**Lorem Pixel**][1] placeholder image service, and saves the returned files to the current directory.
 	- *Examples*
-		- `get-images`
+		- `get-images --prefix="my-image-"`
 		- `get-images -w=1000 -num=5`
 		- `get-images -width=600 -h=400 -n=10`
 

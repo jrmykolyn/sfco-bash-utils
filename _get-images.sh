@@ -16,6 +16,7 @@ function get-images {
 	defaultWidth=1000
 	defaultHeight=750
 	defaultImageNum=5
+	defaultPrefix="image-"
 
 	# Parse args:
 	# If args. received, validate and update local vars.
@@ -45,6 +46,12 @@ function get-images {
 					"--num")
 						defaultImageNum="$value"
 						;;
+					"-p")
+						defaultPrefix="$value"
+						;;
+					"--prefix")
+						defaultPrefix="$value"
+						;;
 				esac
 			fi
 		done
@@ -60,6 +67,6 @@ function get-images {
 
 	# Fetch images.
 	for i in $(seq 1 $defaultImageNum); do
-		curl "http://lorempixel.com/$defaultWidth/$defaultHeight/" > "image-$i.jpg"
+		curl "http://lorempixel.com/$defaultWidth/$defaultHeight/" > "$defaultPrefix$i.jpg"
 	done
 }

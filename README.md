@@ -1,7 +1,7 @@
 # SF Co. - Bash Utils
 
 ### Attribution
-- *Version:* `0.0.2`
+- *Version:* `0.0.3`
 - *Author:* **Jesse R Mykolyn** `<jrmykolyn@gmail.com>`
 - *Link:* **N/A**
 

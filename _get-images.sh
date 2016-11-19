@@ -1,14 +1,16 @@
 # --------------------------------------------------
 # INITIALIZATION
 # --------------------------------------------------
-echo ">>> LOADING: getImages"
+scriptName="get-images"
+
+export scriptsLoaded=$scriptsLoaded" "$scriptName
 
 
 # --------------------------------------------------
 # DECLARE FUNCTION
 # --------------------------------------------------
 # ...
-function getImages {
+function get-images {
 	hostURL="http://lorempixel.com/"
 	defaultWidth=1000
 	defaultHeight=750

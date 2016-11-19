@@ -1,5 +1,12 @@
-echo ">>> LOADING 'getImages'"
+# --------------------------------------------------
+# INITIALIZATION
+# --------------------------------------------------
+echo ">>> LOADING: getImages"
 
+
+# --------------------------------------------------
+# DECLARE FUNCTION
+# --------------------------------------------------
 # ...
 function getImages {
 	hostURL="http://lorempixel.com/"

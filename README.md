@@ -30,7 +30,7 @@
 ---
 - **sfco-utils**
 	- *Description*
-		- When invoked, this function prints out a list of the any scripts which have been initalized by SF Co. Bash Utils.
+		- When invoked, this function prints out a list of the any scripts which have been initialized by SF Co. Bash Utils.
 	- *Examples*
 		- `sfco-utils`
 - **get-images** [-whnp] [--width --height --num --prefix]

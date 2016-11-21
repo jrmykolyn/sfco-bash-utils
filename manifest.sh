@@ -13,3 +13,4 @@ export scriptsLoaded
 # --------------------------------------------------
 source "$utilsRoot/_sfco-utils.sh"
 source "$utilsRoot/_get-images.sh"
+source "$utilsRoot/_go-up.sh"

@@ -4,7 +4,7 @@
 
 ### Attribution
 ---
-- *Version:* `0.0.7`
+- *Version:* `0.1.0`
 - *Author:* **Jesse R Mykolyn** `<jrmykolyn@gmail.com>`
 - *Link:* **N/A**
 
@@ -40,6 +40,11 @@
 		- `get-images --prefix="my-image-"`
 		- `get-images -w=1000 -num=5`
 		- `get-images -width=600 -h=400 -n=10`
+- **go-up**
+	- *Description*
+		- This function is a wrapper around the `cd` command, and allows for faster, less verbose navigation *up* the file system.
+	- *Examples*
+		- Examples pending.
 
 
 

@@ -4,7 +4,7 @@
 
 ### Attribution
 ---
-- *Version:* `0.1.0`
+- *Version:* `0.1.1`
 - *Author:* **Jesse R Mykolyn** `<jrmykolyn@gmail.com>`
 - *Link:* **N/A**
 
@@ -42,9 +42,10 @@
 		- `get-images -width=600 -h=400 -n=10`
 - **go-up**
 	- *Description*
-		- This function is a wrapper around the `cd` command, and allows for faster, less verbose navigation *up* the file system.
+		- This function is a wrapper around the `cd` command, and allows for faster, less verbose navigation *up* the file system. `go-up` may be called with a single argument of type integer, which indicates how many levels up the file system to traverse. Calling `go-up` without any arguments is equivalent to `cd ..`.
 	- *Examples*
-		- Examples pending.
+		- `go-up`
+		- `go-up 3`
 
 
 

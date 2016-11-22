@@ -4,7 +4,7 @@
 
 ### Attribution
 ---
-- *Version:* `0.1.1`
+- *Version:* `0.2.0`
 - *Author:* **Jesse R Mykolyn** `<jrmykolyn@gmail.com>`
 - *Link:* **N/A**
 
@@ -46,6 +46,11 @@
 	- *Examples*
 		- `go-up`
 		- `go-up 3`
+- **mk-sass**
+	- *Description*
+		- This function allows for the quick creation of SASS/SCSS 'partial' files. `mk-sass` takes the desired file name as an argument, and creates a well-commented `*.scss` file in the current directory.
+	- *Examples*
+		- `mk-sass my-file`
 
 
 

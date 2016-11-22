@@ -1,8 +1,10 @@
 # --------------------------------------------------
 # DECLARE VARS
 # --------------------------------------------------
-# Capture current directory path.
+# Capture directory paths.
 utilsRoot="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+functionsRoot="$utilsRoot/functions"
+
 scriptsLoaded=""
 
 export scriptsLoaded
@@ -12,6 +14,7 @@ export scriptsLoaded
 # INITIALIZE SCRIPTS
 # --------------------------------------------------
 source "$utilsRoot/_sfco-utils.sh"
-source "$utilsRoot/_get-images.sh"
-source "$utilsRoot/_go-up.sh"
-source "$utilsRoot/_mk-sass.sh"
+
+source "$functionsRoot/get-images/_get-images.sh"
+source "$functionsRoot/go-up/_go-up.sh"
+source "$functionsRoot/mk-sass/_mk-sass.sh"

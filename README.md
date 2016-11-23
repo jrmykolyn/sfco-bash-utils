@@ -4,7 +4,7 @@
 
 ### Attribution
 ---
-- *Version:* `0.2.4`
+- *Version:* `0.2.5`
 - *Author:* **Jesse R Mykolyn** `<jrmykolyn@gmail.com>`
 - *Link:* **N/A**
 
@@ -46,11 +46,14 @@
 	- *Examples*
 		- `go-up`
 		- `go-up 3`
-- **mk-sass**
+- **mk-sass** [-d] [--dir]
 	- *Description*
-		- This function allows for the quick creation of SASS/SCSS 'partial' files. `mk-sass` takes the desired file name as an argument, and creates a well-commented `*.scss` file in the current directory. `mk-sass` also adds an `_` character to the file name, as per SASS/SCSS 'partial' naming conventions.
+		- This function allows for the quick creation of SASS/SCSS 'partial' files. `mk-sass` takes the desired file name as the first argument, and creates a well-commented `*.scss` file in the current directory. `mk-sass` also adds an `_` character to the file name, as per SASS/SCSS 'partial' naming conventions.
+		- If passed the `-d` or `--dir` flag, `mk-sass` will build a new directory using the file name provided, and insert the `*.scss` file there.
 	- *Examples*
 		- `mk-sass my-file`
+		- `mk-sass my-other-file -d`
+		- `mk-sass my-final-file --dir`
 
 
 

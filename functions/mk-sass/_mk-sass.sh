@@ -15,6 +15,8 @@ function mk-sass {
   defaultFileType='.scss'
   defaultFilePrefix='_'
   defaultTargetDir='./'
+  defaultManifestName='manifest.scss'
+  updateManifest=false
 
   # Parse args.
   if [ -z "$1" ] || [ "$1" == "" ]; then
@@ -42,6 +44,12 @@ function mk-sass {
             defaultTargetDir="$partialName/"
             [ -d "./$defaultTargetDir" ] || mkdir $defaultTargetDir
             ;;
+          "-m")
+            updateManifest=true
+            ;;
+          "--manifest")
+            updateManifest=true
+            ;;
         esac
       fi
     done
@@ -65,5 +73,10 @@ function mk-sass {
     echo '// --------------------------------------------------'  >> "$filePath"
     echo '// Rules, logic, and anything else that can be compiled to "vanilla" CSS goes here.' >> "$filePath"
     printf '\n' >> "$filePath"
+
+    # Conditionally update manifest file.
+    if [ "$updateManifest" == true ]; then
+      echo "@import '$partialName';" >> "$defaultTargetDir$defaultManifestName"
+    fi
   fi
 }

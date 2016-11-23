@@ -12,7 +12,7 @@ export scriptsLoaded=$scriptsLoaded" "$scriptName
 # ...
 function mk-sass {
   # Declare vars.
-  defaultFileType='.sass'
+  defaultFileType='.scss'
   defaultFilePrefix='_'
 
   # Parse args.

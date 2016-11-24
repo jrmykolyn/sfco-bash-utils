@@ -4,7 +4,7 @@
 
 ### Attribution
 ---
-- *Version:* `0.2.6`
+- *Version:* `0.2.7`
 - *Author:* **Jesse R Mykolyn** `<jrmykolyn@gmail.com>`
 - *Link:* **N/A**
 

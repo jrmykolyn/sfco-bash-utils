@@ -28,28 +28,16 @@ function get-images {
 
 			if [ "$arg" != "$param" ]; then
 				case "$param" in
-					"-w")
+					"-w" | "--width")
 						defaultWidth="$value"
 						;;
-					"--width")
-						defaultWidth="$value"
-						;;
-					"-h")
+					"-h" | "--height")
 						defaultHeight="$value"
 						;;
-					"--height")
-						defaultHeight="$value"
-						;;
-					"-n")
+					"-n" | "--num")
 						defaultImageNum="$value"
 						;;
-					"--num")
-						defaultImageNum="$value"
-						;;
-					"-p")
-						defaultPrefix="$value"
-						;;
-					"--prefix")
+					"-p" | "--prefix")
 						defaultPrefix="$value"
 						;;
 				esac

@@ -36,18 +36,11 @@ function mk-sass {
       if [ "$arg" != $1 ]; then
 
         case "$arg" in
-          "-d")
+          "-d" | "--dir")
             defaultTargetDir="$partialName/"
             [ -d "./$defaultTargetDir" ] || mkdir $defaultTargetDir
             ;;
-          "--dir")
-            defaultTargetDir="$partialName/"
-            [ -d "./$defaultTargetDir" ] || mkdir $defaultTargetDir
-            ;;
-          "-m")
-            updateManifest=true
-            ;;
-          "--manifest")
+          "-m" | "--manifest")
             updateManifest=true
             ;;
         esac

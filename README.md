@@ -4,7 +4,7 @@
 
 ### Attribution
 ---
-- *Version:* `0.2.7`
+- *Version:* `0.3.0`
 - *Author:* **Jesse R Mykolyn** `<jrmykolyn@gmail.com>`
 - *Link:* **N/A**
 
@@ -56,6 +56,11 @@
 		- `mk-sass example-file-2 -d`
 		- `mk-sass example-file-3 --dir`
 		- `mk-sass example-file-4 --m`
+- **cp-pwd**
+	- *Description*
+		- This function copies the current directory path to the clipboard. `cp-pwd` does not take any arguments.
+	- *Examples*
+		- `cp-pwd`
 
 
 
